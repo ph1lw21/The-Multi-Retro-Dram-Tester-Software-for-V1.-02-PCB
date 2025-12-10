@@ -5,7 +5,7 @@ MULTI RETRO DRAM COMMANDER - USER MANUAL
 ========================================
 
 ******************************************************************************************************
-Do Not Connect The Multi Retro Dram Tester to a USB port whilst powered from the 2.1mm DC Jack Socket!
+Do Not Connect The Multi Retro Dram Tester to a USB port whilst powered from the 2.1mm DC Jack Socket! Use one or the other to power the DRAM tester. 
 ******************************************************************************************************
 
 OVERVIEW
@@ -17,7 +17,9 @@ Pico (RP2040) to generate precise timing signals and verify memory integrity.
 SOCKET SELECTION (IMPORTANT!)
 --------------------------------
 The tester has 2 distinct ZIF sockets. You MUST use the correct one to avoid damaging
-the chip or the tester.
+the chip or the tester. 
+
+Align all DRAM chips to top of the ZIF socket as per marking on the PCB. 
 
 >> ZIF SOCKET 1 (SK1) - STANDARD 5V <<
    Use this for all other chips (single +5V supply).
@@ -192,6 +194,10 @@ Rotary Button: Depressing the Button Selects an option or toggles a setting.
 Long Press (during test): Aborts the current test immediately and cuts power to the socket.
 Encoder Direction: Via PC command, you can reverse the direction of the knob if it feels "backward" to you.
 Display Driver: Via PC command, toggle between SSD1306 and SH1106 drivers for the OLED display.
+
+ABORT:
+------
+Press and hold the button on the rotary encoder to ABORT any tests that are running. Pressing the button again takes you back to the Main screen. 
 
 TROUBLESHOOTING:
 ----------------
