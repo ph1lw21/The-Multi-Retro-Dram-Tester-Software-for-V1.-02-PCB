@@ -19,7 +19,7 @@ SOCKET SELECTION (IMPORTANT!)
 The tester has 2 distinct ZIF sockets. You MUST use the correct one to avoid damaging
 the chip or the tester. 
 
-Align all DRAM chips to top of the ZIF socket as per marking on the PCB. 
+Align all DRAM chips Pin 1 to top of the ZIF socket as per marking on the PCB. 
 
 >> ZIF SOCKET 1 (SK1) - STANDARD 5V <<
    Use this for all other chips (single +5V supply).
