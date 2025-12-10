@@ -1,7 +1,8 @@
-# The Multi Retro Dram Tester Software for V1.02 PCB
+The Multi Retro Dram Tester Software for V1.02 PCB
+
 Updated software for "The Multi Retro Dram Tester" for rev v1.02 pcb
 
-MULTI RETRO DRAM COMMANDER - USER MANUAL
+MULTI RETRO DRAM COMMANDER - USER Manual Updated 10.12.2025
 ========================================
 
 ******************************************************************************************************
@@ -122,7 +123,7 @@ Here is a brief description of the functions and menus available on The Multi Re
 
 1. Main Menu Functions
 ----------------------
-Select Chip Type: Allows you to scroll through the supported DRAM models (e.g., 4164, 4116, 514400). This configures the voltages and pinouts automatically.
+Select Chip Type: Allows you to scroll through the supported DRAM models (e.g., 4164, 4116, 71C4400). This configures the voltages and pinouts automatically.
 Start Test: Initiates the selected test sequence.
 Settings: Opens the detailed configuration menu.
 
@@ -202,7 +203,4 @@ Press and hold the button on the rotary encoder to ABORT any tests that are runn
 TROUBLESHOOTING:
 ----------------
 * "OFFLINE": Check USB cable and ensure correct COM port is selected.
-* "Pass=0, Fail=0" after start: Check connection.
-* Chip getting hot: STOP IMMEDIATELY. You may have inserted it backward 
-  or in the wrong socket.
 
