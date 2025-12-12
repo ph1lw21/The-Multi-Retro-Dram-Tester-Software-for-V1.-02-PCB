@@ -34,6 +34,10 @@ Align all DRAM chips Pin 1 to top of the ZIF socket as per marking on the PCB.
    * MK4027 (4K x 1)
    * TMS4108 (8K x 1)
 
+DRAM Timing
+-----------
+The Raspberry Pi Pico code utilises "Assembly NOPs" - This provides necessary, deterministic nanosecond-level delays between RAS/CAS edges, which Arduino's delayMicroseconds() cannot guarantee.
+
 The Main DRAM Test Algorithms
 -----------------------------
 These are the selectable tests that stress the internal memory cells.
