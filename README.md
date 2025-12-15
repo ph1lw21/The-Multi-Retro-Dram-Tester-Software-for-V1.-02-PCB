@@ -2,12 +2,14 @@ The Multi Retro Dram Tester Software for V1.02 PCB
 
 See bottom of the page for the latest release. 
 
-MULTI RETRO DRAM COMMANDER - USER Manual Updated 10.12.2025
+MULTI RETRO DRAM COMMANDER - USER Manual Updated 15.12.2025
 ========================================
 
-******************************************************************************************************
-Do Not Connect The Multi Retro Dram Tester to a USB port whilst powered from the 2.1mm DC Jack Socket! Use one or the other to power the DRAM tester. 
-******************************************************************************************************
+************************************************************************************************************************************************************
+Do Not Connect The Multi Retro Dram Tester to a USB port whilst powered from the 2.1mm DC Jack Socket! - Onlu use one or the other to power the DRAM tester. 
+************************************************************************************************************************************************************
+
+Note:- Maximum input voltage via the 2.1mm DC Jack Socket is 12V!
 
 OVERVIEW
 -----------
@@ -172,7 +174,6 @@ Sets the pause duration between test loops (e.g., wait 1 second before starting 
 
 3. Visual & UI Settings (*** Turn off the Bargraph and the Phase Messages for faster testing!***)
 -----------------------
-Bargraph: Toggles the progress bar at the bottom of the screen.
 Phase Msgs: Toggles the display of specific sub-steps (e.g., "March C- (w0)"). Turning this off speeds up the test slightly.
 Result Size:
 Small: Shows detailed statistics (Address, Expected vs. Actual data).
