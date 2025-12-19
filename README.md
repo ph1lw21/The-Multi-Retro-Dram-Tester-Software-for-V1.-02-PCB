@@ -2,7 +2,7 @@ The Multi Retro Dram Tester Software for V1.02 PCB
 
 See bottom of the page for the latest release. 
 
-MULTI RETRO DRAM COMMANDER - USER Manual Updated 15.12.2025
+MULTI RETRO DRAM COMMANDER - USER Manual Updated 19.12.2025
 ========================================
 
 ************************************************************************************************************************************************************
