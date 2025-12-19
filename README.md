@@ -26,9 +26,10 @@ Align all DRAM chips Pin 1 to top of the ZIF socket as per marking on the PCB.
 
 >> ZIF SOCKET 1 (SK1) - STANDARD 5V <<
    Use this for all other chips (single +5V supply).
-   * 16-Pin: 3732, 4532, 4164, 41256, HM4816, 4532, 3732
-   * 18-Pin: 4464, 4416, 411000
-   * 20-Pin: 44256, 71C4400 (514400)
+   * 16-Pin: HM4816 (16K x 1 - 5V only version of a 4116) , (M3732L, M3732H, TMS4532-NL3, TMS4532-NL4 all 32K x 1) , 4164 (64K x 1)
+   * 16-Pin: Continued: - 4128 (128K x 1 - Piggyback), 41256 (256K x 1)
+   * 18-Pin: 4416 (16K x 4), 4464 (64K x 4), 411000 (1M x 1)
+   * 20-Pin: 44256 (256K x 4), 71C4400 (1M x 4) -(514400 etc)
 
 >> ZIF SOCKET 2 (SK2) - MULTI-VOLTAGE <<
    Use this for chips requiring -5V, +5V, and +12V.
