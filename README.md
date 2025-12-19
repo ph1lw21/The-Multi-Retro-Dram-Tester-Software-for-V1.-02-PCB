@@ -14,7 +14,7 @@ Note:- Maximum input voltage via the 2.1mm DC Jack Socket is 12V!
 OVERVIEW
 -----------
 This device is a comprehensive tester for vintage Dynamic RAM (DRAM) chips 
-ranging from the 1970s (4116) to the 1990s (71C4400). It uses a Raspberry Pi 
+ranging from the 1970s (4116) to the 1990s (514400/71C4400). It uses a Raspberry Pi 
 Pico (RP2040) to generate precise timing signals and verify memory integrity.
 
 SOCKET SELECTION (IMPORTANT!)
@@ -28,7 +28,7 @@ Align all DRAM chips Pin 1 to top of the ZIF socket as per marking on the PCB.
    Use this for all other chips (single +5V supply).
    * 16-Pin: 3732, 4532, 4164, 41256, HM4816, 4532, 3732
    * 18-Pin: 4464, 4416, 411000
-   * 20-Pin: 44256, 71C4400
+   * 20-Pin: 44256, 71C4400 (514400)
 
 >> ZIF SOCKET 2 (SK2) - MULTI-VOLTAGE <<
    Use this for chips requiring -5V, +5V, and +12V.
@@ -123,7 +123,6 @@ Data/WE Check:
 What it does: Performs a quick write and read verification on a specific cell.
 Why: Confirms the Write Enable (WE) and Data In/Out (DQ) lines are functioning correctly.
 
-
 Here is a brief description of the functions and menus available on The Multi Retro Dram Tester.
 ------------------------------------------------------------------------------------------------
 
@@ -166,13 +165,14 @@ Keeps the chip powered between loops (faster testing).
 
 Retention Time:
 ---------------
-Presets how long the tester waits during "Checkerboard + Ret" to detect weak bits that lose charge. (Manufacturers Recommended Minimum Retention Time)
+Presets how long the tester waits during "Checkerboard + Ret" to detect weak bits that lose charge. 
+(DRAM retention time refers to the maximum time that data can be reliably stored in a DRAM cell before it needs to be refreshed)
 
 Cycle Delay:
 ------------
 Sets the pause duration between test loops (e.g., wait 1 second before starting the next pass).
 
-3. Visual & UI Settings (*** Turn off the Bargraph and the Phase Messages for faster testing!***)
+3. Visual & UI Settings (*** Turn off the Phase Messages for faster testing!***)
 -----------------------
 Phase Msgs: Toggles the display of specific sub-steps (e.g., "March C- (w0)"). Turning this off speeds up the test slightly.
 Result Size:
