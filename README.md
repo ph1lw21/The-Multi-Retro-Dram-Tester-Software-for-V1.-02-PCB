@@ -160,7 +160,7 @@ Keeps the chip powered between loops (faster testing).
 
 Retention Time:
 ---------------
-Presets how long the tester waits during "Checkerboard + Ret" to detect weak bits that lose charge. 
+Presets how long the tester waits during all of the tests to detect weak bits that lose charge. 
 (DRAM retention time refers to the maximum time that data can be reliably stored in a DRAM cell before it needs to be refreshed)
 
 Cycle Delay:
