@@ -1,4 +1,10 @@
-The Multi Retro Dram Tester Software for V1.02 PCB See bottom of the page for the latest release. MULTI RETRO DRAM COMMANDER - USER Manual Updated 24.12.2025 Do Not Connect The Multi Retro Dram Tester to a USB port whilst powered from the 2.1mm DC Jack Socket! - Onlu use one or the other to power the DRAM tester. Note:- Maximum input voltage via the 2.1mm DC Jack Socket is 12V!
+MULTI RETRO DRAM COMMANDER - USER Manual 
+
+Updated 24.12.2025 
+
+Do Not Connect The Multi Retro Dram Tester to a USB port whilst powered from the 2.1mm DC Jack Socket! - Only use one or the other to power the DRAM tester. 
+
+Note:- Maximum input voltage via the 2.1mm DC Jack Socket is 12V!
 
 OVERVIEW
 This device is a comprehensive tester for vintage Dynamic RAM (DRAM) chips ranging from the 1970s (4116) to the 1990s (71C4400). It uses a Raspberry Pi Pico (RP2040) to generate precise timing signals and verify memory integrity.
