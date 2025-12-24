@@ -45,14 +45,14 @@ The Main DRAM Test Algorithms
 -----------------------------
 These are the selectable tests that stress the internal memory cells.
 
-March B:
+March B: + Retention
 --------
 Type: Standard Industry Algorithm (Finite State Machine).
 Complexity: Low/Medium.
 What it does: Writes 0s to the whole chip. Then walks through reading 0/writing 1, then reading 1/writing 0.
 Best for: Detecting simple "Stuck-at" faults (a bit that is permanently 0 or 1) and some simple coupling faults. Faster than March C-.
 
-March C- (Minus):
+March C- (Minus): + Retention
 -----------------
 Type: Standard Industry Algorithm.
 Complexity: High (The "Gold Standard" for DRAM).
@@ -62,16 +62,10 @@ Best for: Detecting Stuck-at faults, Transition faults (cell fails to change fro
 March C- Mix:
 -------------
 Type: Timing Stress Test.
-What it does: Runs the March C- algorithm twice.
+What it does: Runs the March C- + Retention algorithm twice.
 First run: Uses Standard Page Mode (slower, standard timing).
 Second run: Uses Fast Page Mode (FPM) (keeps RAS low, toggles CAS rapidly).
 Best for: Detecting chips that are logically functional but fail when accessed at high speeds (timing violations).
-
-Checkerboard:
--------------
-Type: Pattern Test.
-What it does: Writes a logical checkerboard pattern (010101...) to the memory array, verifies it, then writes the inverse pattern (101010...) and verifies it.
-Best for: Testing Cell-to-Cell interference. Because a capacitor holding a '1' is physically next to a capacitor holding a '0', this tests for leakage between adjacent cells on the silicon die.
 
 Checkerboard + Ret (Retention):
 -------------------------------
