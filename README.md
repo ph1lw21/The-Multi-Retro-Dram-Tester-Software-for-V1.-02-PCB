@@ -2,7 +2,7 @@ The Multi Retro Dram Tester Software for V1.02 PCB
 
 See bottom of the page for the latest release. 
 
-MULTI RETRO DRAM COMMANDER - USER Manual Updated 19.12.2025
+MULTI RETRO DRAM COMMANDER - USER Manual Updated 24.12.2025
 ========================================
 
 ************************************************************************************************************************************************************
@@ -65,7 +65,7 @@ Type: Timing Stress Test.
 What it does: Runs the March C- algorithm twice.
 First run: Uses Standard Page Mode (slower, standard timing).
 Second run: Uses Fast Page Mode (FPM) (keeps RAS low, toggles CAS rapidly).
-Best for: Detecting chips that are logically functional but fail when accessed at high speeds (timing violations). Note: Only runs the second pass on chips that support FPM (e.g., 4164, 41256).
+Best for: Detecting chips that are logically functional but fail when accessed at high speeds (timing violations).
 
 Checkerboard:
 -------------
@@ -141,8 +141,8 @@ Test Algorithm: Selects the specific logic used (March B, March C-, Checkerboard
 
 Access Mode:
 ------------
-Std Page: Uses standard RAS/CAS timing (compatible with all chips).
-Fast Page: Uses Fast Page Mode (RAS stays low, CAS toggles). Only available for chips that support it (4164 onwards).
+Std Page: Uses standard RAS/CAS timing.
+Fast Page: Uses Fast Page Mode (RAS stays low, CAS toggles). 
 
 Loop Count:
 -----------
