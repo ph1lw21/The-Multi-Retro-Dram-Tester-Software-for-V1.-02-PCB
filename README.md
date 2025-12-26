@@ -33,21 +33,21 @@ The Main DRAM Test Algorithms
 -----------------------------
 These are the selectable tests that stress the internal memory cells.
 
-March B:+ Ret (Retention):
+March B::
 --------
 Type: Standard Industry Algorithm (Finite State Machine).
 Complexity: Low/Medium.
 What it does: Writes 0s to the whole chip. Then walks through reading 0/writing 1, then reading 1/writing 0.
 Best for: Detecting simple "Stuck-at" faults (a bit that is permanently 0 or 1) and some simple coupling faults. Faster than March C-.
 
-March C- (Minus):+ Ret (Retention):
+March C- (Minus):
 -----------------
 Type: Standard Industry Algorithm.
 Complexity: High (The "Gold Standard" for DRAM).
 What it does: A complex sequence that walks up and down the memory array, reading and writing inverted data multiple times (e.g., Read 0, Write 1, Read 1, Write 0).
 Best for: Detecting Stuck-at faults, Transition faults (cell fails to change from 0->1 or 1->0), Coupling faults (writing to cell A changes cell B), and Address Decoder faults. This is the recommended default test.
 
-March C- Mix: (Retention):
+March C- Mix:
 -------------
 Type: Timing Stress Test.
 What it does: Runs the March C- algorithm twice.
@@ -55,16 +55,22 @@ First run: Uses Standard Page Mode (slower, standard timing).
 Second run: Uses Fast Page Mode (FPM) (keeps RAS low, toggles CAS rapidly).
 Best for: Detecting chips that are logically functional but fail when accessed at high speeds (timing violation).
 
-Checkerboard + Ret (Retention):
--------------------------------
+Checkerboard:
+-------------
 Type: Leakage Test.
-What it does: Runs the Checkerboard test, but pauses after writing the pattern for a specific duration (defined by Retention Time in settings), and then reads the data.
+What it does: Runs the Checkerboard test, and then reads and verifies the data.
 Best for: Detecting Weak Bits. These are cells that work fine immediately, but lose their charge (turn from 1 to 0) faster than the standard refresh cycle allows. Crucial for verifying old/aging chips.
+
+Row Retention:
+--------------
+Type: True Row Retention: 
+What it does: This test isolates **one specific row**, charges it up, waits for the exact specified time, and checks *only* that row. Then it moves to the next, until all rows have been checked.
+Best for: Detecting "Marginal" or "Weak" Bits
 
 Extreme:
 --------
 Type: Composite Suite.
-A selectable composition of all of the above algorithms - Default setting is MarchC- Mix & Checkerboard + Ret (Retention)
+A selectable composition of all of the above algorithms
 
 CONFIGURATION OPTIONS
 ------------------------
