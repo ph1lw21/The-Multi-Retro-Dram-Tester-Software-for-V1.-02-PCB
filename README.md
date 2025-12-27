@@ -33,7 +33,7 @@ The Main DRAM Test Algorithms
 -----------------------------
 These are the selectable tests that stress the internal memory cells.
 
-March B::
+March B:
 --------
 Type: Standard Industry Algorithm (Finite State Machine).
 Complexity: Low/Medium.
