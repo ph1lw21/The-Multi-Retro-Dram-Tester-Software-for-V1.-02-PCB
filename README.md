@@ -9,7 +9,7 @@ OVERVIEW
 -----------
 This device is a comprehensive tester for vintage Dynamic RAM (DRAM) chips 
 ranging from the 1970s (4116) to the 1990s (71C4400). It uses a Raspberry Pi 
-Pico (RP2040) to generate precise timing signals and verify memory integrity.
+Pico to generate precise timing signals and verify memory integrity.
 
 SOCKET SELECTION (IMPORTANT!)
 --------------------------------
