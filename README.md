@@ -8,8 +8,7 @@ Do Not Connect The Multi Retro Dram Tester to a USB port whilst powered from the
 OVERVIEW
 -----------
 This device is a comprehensive tester for vintage Dynamic RAM (DRAM) chips 
-ranging from the 1970s (4116) to the 1990s (71C4400). It uses a Raspberry Pi 
-Pico to generate precise timing signals and verify memory integrity.
+ranging from the 1970s (4116) to the 1990s (71C4400). It uses a Dual-core ARM Cortex-MO+ Processor generate precise timing signals and verify memory integrity.
 
 SOCKET SELECTION (IMPORTANT!)
 --------------------------------
