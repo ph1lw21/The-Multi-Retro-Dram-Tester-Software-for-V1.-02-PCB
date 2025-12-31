@@ -1,3 +1,5 @@
+Download the latest software from releases ----->
+
 MULTI RETRO DRAM COMMANDER - USER MANUAL
 ========================================
 
