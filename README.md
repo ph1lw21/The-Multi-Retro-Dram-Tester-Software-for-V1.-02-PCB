@@ -19,7 +19,7 @@ the chip or the tester.
 
 >> ZIF SOCKET 1 (SK1) - STANDARD 5V <<
    Use this for all other chips (single +5V supply).
-   * 16-Pin: HM4816 (16K x 1 - 5V only version of a 4116) , (M3732L, M3732H, TMS4532-NL3, TMS4532-NL4 all 32K x 1) , 4164 (64K x 1)
+   * 16-Pin: HM4816 (16K x 1) a 5V only version of a 4116, (M3732L, M3732H, TMS4532-NL3, TMS4532-NL4 all 32K x 1) , 4164 (64K x 1)
    * 16-Pin: Continued: - 4128 (128K x 1 - Piggyback), 41256 (256K x 1)
    * 18-Pin: 4416 (16K x 4), 4464 (64K x 4), 411000 (1M x 1)
    * 20-Pin: 44256 (256K x 4), 514400 (1M x 4) -(71C400 etc)
